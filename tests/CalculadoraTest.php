@@ -23,4 +23,7 @@ class CalculadoraTest extends TestCase
 		$b = 1;
 		$this->assertEquals(1,$this->calculadora->subtract($a,$b));
 	}
+	public function tearDown(){
+		$this->calculadora = null;
+	}
 }
