@@ -14,4 +14,10 @@ class CalculadoraTest extends TestCase
 		
 		$this->assertEquals(3, $this->calculadora->sum($a,$b));
 	}
+	public function testSimpleSubtraction()
+	{
+		$a = 2;
+		$b = 1;
+		$this->assertEquals(1,$this->calculadora->subtract($a,$b));
+	}
 }
