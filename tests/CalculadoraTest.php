@@ -7,6 +7,9 @@ use Calculadora\Calculadora;
 
 class CalculadoraTest extends TestCase
 {
+	public function setUp(){
+		$this->calculadora = new Calculadora();
+	}
 	public function testSimpleSum()
 	{
 		$a = 1;
