@@ -3,10 +3,10 @@
 namespace Calculadora;
 
 class Calculadora{
-	public function sum($arg1, $arg2){
-		return $arg1+$arg2;
+	public function sum(MyNumber $arg1,MyNumber $arg2): MyNumber{
+		return new MyNumber($arg1->value+$arg2->value);
 	}
-	public function subtract($arg1, $arg2){
-		return $arg1-$arg2;
+	public function subtract(MyNumber $arg1,MyNumber $arg2): MyNumber{
+		return new MyNumber($arg1->value-$arg2->value);
 	}
 }
